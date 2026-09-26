@@ -1,9 +1,9 @@
-class Cliente {
-    constructor(id, nombre, telefono, email) {
-        this.id = id;
-        this.nombre = nombre;
+import Usuario from './Usuario.js';
+
+class Cliente extends Usuario {
+    constructor(id, nombre, email, contraseña, telefono) {
+        super(id, nombre, email, contraseña, 'cliente');
         this.telefono = telefono;
-        this.email = email;
     }
 }
 
